@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLSHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">TOOLSHOP</div>
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="text" placeholder="Пошук">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="icon-button" id="profileButton"><i class="fas fa-user"></i></button>
+            <button class="icon-button" id="wishlistButton"><i class="fas fa-heart"></i></button>
+            <button class="icon-button" id="cartButton"><i class="fas fa-shopping-cart"></i></button>
+        </div>
+    </header>
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Головна</a></li>
+            <li><a href="#"><i class="fas fa-th-large"></i> Каталог</a></li>
+            <li><a href="#" id="sideMenuWishlist"><i class="fas fa-heart"></i> Список бажань</a></li>
+        </ul>
+        <div class="menu-section">
+            <h4>Інформація</h4>
+            <ul>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h4>Наші контакти</h4>
+            <ul>
+                <li>
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Доставка
+                    </label>
+                </li>
+                <li><a href="#"><i class="fas fa-comment"></i> Відгуки</a></li>
+                <li><a href="#"><i class="fas fa-life-ring"></i> Підтримка</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-image">Фото продукту</div>
+                <div class="product-actions">
+                    <button class="add-to-cart-button"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="add-to-wishlist-button"><i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="authModal" class="modal">
+        <div class="modal-content auth-modal">
+            <span class="close-button">×</span>
+            <h2>Авторизація</h2>
+            <form>
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+                <div class="modal-links">
+                    <a href="#">Забули пароль?</a>
+                    <a href="#">Реєстрація</a>
+                </div>
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content empty-modal">
+            <span class="close-button">×</span>
+            <i class="fas fa-shopping-cart empty-icon"></i>
+            <h3>Кошик порожній</h3>
+            <p>Додайте товари до кошика</p>
+        </div>
+    </div>
+
+    <div id="wishlistModal" class="modal">
+        <div class="modal-content empty-modal">
+            <span class="close-button">×</span>
+            <i class="fas fa-heart empty-icon"></i>
+            <h3>Список бажань порожній</h3>
+            <p>Додайте вподобані товари до свого списку</p>
+        </div>
+    </div>
+
+    <div id="productDetailModal" class="modal product-detail-modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <div class="product-detail-header">
+                <div class="product-detail-tabs">
+                    <button class="tab-button active" data-tab="about">Усе про товар</button>
+                    <button class="tab-button" data-tab="characteristics">Характеристики</button>
+                    <button class="tab-button" data-tab="reviews">Відгуки</button>
+                </div>
+            </div>
+            <div class="product-detail-content">
+                <div id="about" class="tab-pane active">
+                    <div class="product-main-info">
+                        <div class="product-image-carousel">
+                            <button class="carousel-arrow left">←</button>
+                            <div class="carousel-placeholder"></div>
+                            <button class="carousel-arrow right">→</button>
+                        </div>
+                        <div class="product-summary">
+                            <h2>Назва продукту</h2>
+                            <p class="seller">Продавець: TOOLSHOP</p>
+                            <p class="availability">Є в наявності</p>
+                            <p class="price">1200₴</p>
+                            <button class="buy-button"><i class="fas fa-shopping-cart"></i> Купити</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="characteristics" class="tab-pane">
+                    <h3>Характеристики...</h3>
+                    <div class="rating-summary">
+                         4.5/5 <span class="stars">★★★★★</span> (25 відгуків)
+                    </div>
+                    <div class="characteristics-list">
+                        <p>Джерело живлення: <span class="value">Акумулятор</span></p>
+                        <p>Вид: <span class="value">Мультиінструмент</span></p>
+                        <p>Частота холостого ходу: <span class="value">16000 обертів/хв</span></p>
+                        <p>Країна виробник товару: <span class="value">Китай</span></p>
+                        <p>Країна реєстрації бренду: <span class="value">Китай</span></p>
+                        <p>Гарантія: <span class="value">1 місяць</span></p>
+                    </div>
+                    <div class="product-summary fixed-bottom">
+                         <p class="seller">Продавець: TOOLSHOP</p>
+                         <p class="availability">Є в наявності</p>
+                         <p class="price">1200₴</p>
+                         <button class="buy-button"><i class="fas fa-shopping-cart"></i> Купити</button>
+                    </div>
+                </div>
+
+                <div id="reviews" class="tab-pane">
+                    <h3>Відгуки покупців про...</h3>
+                    <div class="reviews-summary">
+                        <p>Оцінка користувачів <strong>4.62/5</strong></p>
+                        <p>На основі 150 відгуків</p>
+                        <div class="star-rating">
+                            <div>5 <span class="stars">★★★★★</span> <span>125</span></div>
+                            <div>4 <span class="stars">★★★★★</span> <span>15</span></div>
+                            <div>3 <span class="stars">★★★★★</span> <span>5</span></div>
+                            <div>2 <span class="stars">★★★★★</span> <span>3</span></div>
+                            <div>1 <span class="stars">★★★★★</span> <span>1</span></div>
+                        </div>
+                        <button class="write-review-button">Написати відгук</button>
+                    </div>
+                    <div class="reviews-filter">
+                        <button class="filter-button"><i class="fas fa-filter"></i> Фільтри</button>
+                        <select>
+                            <option>Від тих, хто купив цей товар</option>
+                        </select>
+                    </div>
+                    <div class="customer-photos-videos">
+                        <h4>Фотографії та відео покупців</h4>
+                        <div class="photo-grid">
+                            <div></div><div></div><div></div><div></div><div></div>
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" id="overlay"></div> <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Елементи DOM
+    const menuToggle = document.getElementById('menuToggle');
+    const sideMenu = document.getElementById('sideMenu');
+    const mainContent = document.querySelector('.main-content');
+    const overlay = document.getElementById('overlay');
+
+    const profileButton = document.getElementById('profileButton');
+    const wishlistButton = document.getElementById('wishlistButton');
+    const cartButton = document.getElementById('cartButton');
+
+    const authModal = document.getElementById('authModal');
+    const cartModal = document.getElementById('cartModal');
+    const wishlistModal = document.getElementById('wishlistModal');
+    const productDetailModal = document.getElementById('productDetailModal');
+
+    const closeButtons = document.querySelectorAll('.modal .close-button');
+    const productCards = document.querySelectorAll('.product-card');
+
+    // Функція для відкриття модального вікна
+    function openModal(modalElement) {
+        modalElement.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Заборонити прокрутку фону
+    }
+
+    // Функція для закриття модального вікна
+    function closeModal(modalElement) {
+        modalElement.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = ''; // Дозволити прокрутку фону
+    }
+
+    // Відкриття/Закриття бокового меню
+    menuToggle.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+        mainContent.classList.toggle('menu-open');
+        overlay.classList.toggle('active', sideMenu.classList.contains('active'));
+    });
+
+    // Закриття бокового меню та модальних вікон при кліку на затемнення
+    overlay.addEventListener('click', () => {
+        if (sideMenu.classList.contains('active')) {
+            sideMenu.classList.remove('active');
+            mainContent.classList.remove('menu-open');
+        }
+        document.querySelectorAll('.modal.active').forEach(modal => {
+            closeModal(modal);
+        });
+        overlay.classList.remove('active');
+    });
+
+    // Відкриття модальних вікон з хедеру
+    profileButton.addEventListener('click', () => openModal(authModal));
+    cartButton.addEventListener('click', () => openModal(cartModal));
+    wishlistButton.addEventListener('click', () => openModal(wishlistModal));
+
+    // Кнопка "Список бажань" в боковому меню
+    document.getElementById('sideMenuWishlist').addEventListener('click', (e) => {
+        e.preventDefault(); // Запобігти переходу по посиланню
+        closeModal(sideMenu); // Закриваємо бокове меню, якщо відкрито
+        openModal(wishlistModal);
+    });
+
+
+    // Закриття модальних вікон за допомогою кнопки "x"
+    closeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            closeModal(e.target.closest('.modal'));
+        });
+    });
+
+    // Закриття модальних вікон при натисканні Esc
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal.active').forEach(modal => {
+                closeModal(modal);
+            });
+            if (sideMenu.classList.contains('active')) {
+                sideMenu.classList.remove('active');
+                mainContent.classList.remove('menu-open');
+            }
+            overlay.classList.remove('active');
+        }
+    });
+
+    // Відкриття детальної сторінки продукту при кліку на картку продукту
+    productCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Перевіряємо, чи клік був не по кнопці (кошик/серце)
+            if (!e.target.closest('.add-to-cart-button') && !e.target.closest('.add-to-wishlist-button')) {
+                openModal(productDetailModal);
+            }
+        });
+    });
+
+    // Функціональність вкладок для детальної сторінки продукту
+    const tabButtons = document.querySelectorAll('.product-detail-tabs .tab-button');
+    const tabPanes = document.querySelectorAll('.product-detail-content .tab-pane');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Видаляємо активний клас з усіх кнопок і вкладок
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+
+            // Додаємо активний клас до натиснутої кнопки та відповідної вкладки
+            button.classList.add('active');
+            const targetTab = button.dataset.tab;
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+
+    // Ініціалізація: показати першу вкладку за замовчуванням
+    if (tabButtons.length > 0 && tabPanes.length > 0) {
+        tabButtons[0].classList.add('active');
+        tabPanes[0].classList.add('active');
+    }
+});
