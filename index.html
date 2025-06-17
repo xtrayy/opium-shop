@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="pageTitle">Xstar - Каталог</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <button class="menu-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo logo-link">Xstar</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" data-lang-key="searchPlaceholder" placeholder="Пошук">
+        </div>
+        <div class="header-right">
+            <button class="favorites-btn" aria-label="Favorites">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="cart-btn" aria-label="Cart">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button class="lang-switcher">
+                <img id="current-lang-flag" src="https://flagcdn.com/ua.svg" alt="Ukrainian flag" width="20">
+                <span data-lang-key="changeLanguage">Зміна мови</span>
+            </button>
+            <button class="about-us-btn" data-lang-key="aboutUs">Про нас</button>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-page="home" data-lang-key="home">Головна</a></li>
+                <li><a href="#" class="nav-link" data-page="catalog" data-lang-key="catalog">Каталог</a></li>
+                <li><a href="#" class="nav-link" data-page="wishlist" data-lang-key="wishlist">Список бажань</a></li>
+                <li><a href="#" class="nav-link" data-page="contacts" data-lang-key="otherContacts">Інші контакти</a></li>
+                <li><a href="#" class="nav-link" data-page="reviews" data-lang-key="reviews">Відгуки</a></li>
+                <li><a href="#" class="nav-link" data-page="delivery" data-lang-key="delivery">Доставка</a></li>
+                <li><a href="#" class="nav-link" data-page="support" data-lang-key="support">Підтримка</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="content-area">
+        <div class="product-grid">
+            <div class="product-card" data-product-id="123" data-product-title-key="productName1" data-product-price="199">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 1 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName1">Назва товару 1</h3>
+                <p class="product-price">199 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="124" data-product-title-key="productName2" data-product-price="249">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 2 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName2">Назва товару 2</h3>
+                <p class="product-price">249 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="125" data-product-title-key="productName3" data-product-price="149">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 3 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName3">Назва товару 3</h3>
+                <p class="product-price">149 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="126" data-product-title-key="productName4" data-product-price="299">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 4 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName4">Назва товару 4</h3>
+                <p class="product-price">299 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="127" data-product-title-key="productName5" data-product-price="99">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 5 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName5">Назва товару 5</h3>
+                <p class="product-price">99 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="128" data-product-title-key="productName6" data-product-price="179">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 6 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName6">Назва товару 6</h3>
+                <p class="product-price">179 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="129" data-product-title-key="productName7" data-product-price="219">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 7 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName7">Назва товару 7</h3>
+                <p class="product-price">219 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+            <div class="product-card" data-product-id="130" data-product-title-key="productName8" data-product-price="129">
+                <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                <div class="product-image-placeholder">
+                    <img src="https://rap.ua/wp-content/uploads/2023/05/blockfest-2023-destroy-lonely.jpg" alt="Product 8 Image">
+                </div>
+                <h3 class="product-title" data-lang-key="productName8">Назва товару 8</h3>
+                <p class="product-price">129 &#8372;</p>
+                <button class="add-to-cart-icon"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="language-popup">
+        <button class="close-popup-btn">&times;</button>
+        <h3 data-lang-key="languageSelectionTitle">Вибір мови:</h3>
+        <ul>
+            <li><a href="#" class="lang-option" data-lang="uk"><span data-lang-key="ukrainian">українська</span></a></li>
+            <li><a href="#" class="lang-option" data-lang="en"><span data-lang-key="english">англійська</span></a></li>
+            <li><a href="#" class="lang-option" data-lang="pl"><span data-lang-key="polish">польська</span></a></li>
+        </ul>
+    </div>
+
+    <div class="popup" id="about-us-popup">
+        <button class="close-popup-btn">&times;</button>
+        <h3 data-lang-key="aboutUsDetailsTitle">Детальніше про нас:</h3>
+        <p data-lang-key="websiteLink">&lt;сайт&gt;</p>
+    </div>
+
+    <div class="popup" id="search-popup-content">
+        <button class="close-popup-btn">&times;</button>
+        <p data-lang-key="searchEmptyMessage">Тут поки пусто</p>
+    </div>
+
+    <div class="popup" id="added-to-cart-popup">
+        <button class="close-popup-btn">&times;</button>
+        <div class="popup-content-inner">
+            <i class="fas fa-check-circle success-icon"></i>
+            <p data-lang-key="addedToCartMessage">Товар додано до вашого кошику</p>
+            <div class="popup-actions">
+                <button class="continue-shopping-btn" data-lang-key="continueShopping">ПРОДОВЖИТИ КУПУВАННЯ</button>
+                <button class="go-to-cart-btn" data-lang-key="goToCart">ПЕРЕЙТИ У КОШИК</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="added-to-wishlist-popup">
+        <button class="close-popup-btn">&times;</button>
+        <div class="popup-content-inner">
+            <i class="far fa-heart success-icon" style="color: var(--accent-color);"></i>
+            <p data-lang-key="addedToWishlistMessage">Товар додано до списку бажань!</p>
+            <div class="popup-actions">
+                <button class="continue-shopping-btn" data-lang-key="continueShopping">ПРОДОВЖИТИ КУПУВАННЯ</button>
+                <button class="go-to-wishlist-btn" data-lang-key="goToWishlist">ПЕРЕЙТИ ДО СПИСКУ БАЖАНЬ</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="close-modal-btn">&times;</button>
+            <div id="product-modal-details-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
